@@ -1,0 +1,26 @@
+[project]
+name = "magic-html"
+version = "0.1.5"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10,<3.14"
+authors = [
+  { name = "Kristoffer Andersson", email = "kristoffer.andersson@gu.se" }
+]
+dependencies = [
+  "brotli>=1.2.0",
+  "cchardet==2.2.0a2",
+  "charset-normalizer>=3.4.6",
+  "lxml<5.2.0",
+  "numpy>=2.2.6",
+  "py-asciimath>=0.3.0",
+  "urllib3>=2.6.3",
+]
+
+[build-system]
+requires = ["uv_build>=0.10.11,<0.11.0"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "magic_html"
+module-root = ""

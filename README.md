@@ -1,14 +1,14 @@
 # magic-html - 通用HTML数据提取器
 
+This is a fork of [opendatalab/magic-html](https://github.com/opendatalab/magic-html).
+
+The `main` branch is used to sync upstream changes.
+
 欢迎使用magic-html，这是一个旨在简化从HTML中提取主体区域内容的Python库。
-
-
 
 ## 项目描述
 
 magic-html提供了一套工具，能够轻松地从HTML中提取主体区域内容。无论您处理的是复杂的HTML结构还是简单的网页，这个库都旨在为您的HTML抽取需求提供一个便捷高效的接口。
-
-
 
 ## 特点
 
@@ -17,15 +17,11 @@ magic-html提供了一套工具，能够轻松地从HTML中提取主体区域内
 - 支持多种版面extractor，文章/论坛
 - 支持latex公式提取转换
 
-
-
 ## 安装
 
 ```shell
 pip install https://github.com/opendatalab/magic-html/releases/download/magic_html-0.1.2-released/magic_html-0.1.2-py3-none-any.whl
 ```
-
-
 
 ## 使用
 
@@ -45,7 +41,7 @@ html = """
 
     <meta charset="utf-8" />
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />  
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
 <body>
@@ -70,8 +66,6 @@ data = extractor.extract(html, base_url=url)
 
 print(data)
 ```
-
-
 
 ## benchmark report
 
@@ -101,8 +95,6 @@ print(data)
 ╘══════════════════════╧═════════════╧════════════╧═══════════╛
 ```
 
-
-
 论坛类型：选取头部论坛、问答站点与开源建站框架搭建站点共103个html页面
 
 ```Python
@@ -127,16 +119,11 @@ print(data)
 ╘══════════════════════╧═════════════╧════════════╧═══════════╛
 ```
 
-
-
 ## 许可
 
 本项目代码采用[Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0.html)授权。
-
-
 
 ## 鸣谢
 
 - [trafilatura](https://github.com/adbar/trafilatura)
 - [readability-lxml](https://github.com/buriy/python-readability)
-
